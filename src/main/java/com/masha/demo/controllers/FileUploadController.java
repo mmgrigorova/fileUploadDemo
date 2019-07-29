@@ -36,7 +36,7 @@ public class FileUploadController {
         }
 
         model.addAttribute("msg", "Successful upload of "+ fileNames.toString());
-        model.addAttribute("path", "uploads/"+files[0].getOriginalFilename());
+        model.addAttribute("path", "/uploads/"+files[0].getOriginalFilename());
         return "uploadStatusView";
     }
 }
